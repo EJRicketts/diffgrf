@@ -1,0 +1,91 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diffgrf"
+version = "1.0.0"
+description = "Differentiable Gaussian random field generation in PyTorch"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Evan John Ricketts", email = "rickettse1@cardiff.ac.uk" },
+]
+keywords = [
+    "gaussian-random-field",
+    "spectral-method",
+    "differentiable-programming",
+    "pytorch",
+    "autograd",
+    "porous-media",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+    "torch>=2.0,<3.0",
+    "numpy>=1.22",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "matplotlib>=3.5",
+    "black>=24.0",
+    "isort>=5.12",
+    "pylint>=3.0",
+]
+mesh = [
+    "meshio>=5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/EJRicketts/diffgrf"
+Repository = "https://github.com/EJRicketts/diffgrf"
+Issues = "https://github.com/EJRicketts/diffgrf/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310", "py311", "py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+known_first_party = ["diffgrf"]
+
+[tool.pylint.main]
+py-version = "3.10"
+jobs = 0
+
+[tool.pylint.format]
+max-line-length = 88
+
+[tool.pylint."messages control"]
+disable = [
+    "too-many-arguments",
+    "too-many-positional-arguments",
+    "too-many-locals",
+    "too-many-instance-attributes",
+    "too-many-branches",
+    "too-many-statements",
+    "invalid-name",
+    "duplicate-code",
+    "import-outside-toplevel",
+    "missing-function-docstring",
+    "missing-module-docstring",
+]
+
+[tool.pylint.design]
+max-args = 12

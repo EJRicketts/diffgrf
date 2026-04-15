@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use DiffGRF, please cite it using the metadata below."
+title: "DiffGRF: Differentiable Gaussian random field generation in PyTorch"
+version: 1.0.0
+date-released: 2026-04-14
+authors:
+  - family-names: Ricketts
+    given-names: Evan John
+    orcid: "https://orcid.org/0000-0001-8056-070X"
+    email: "rickettse1@cardiff.ac.uk"
+    affiliation: "School of Engineering, Cardiff University, Cardiff CF24 3AA, UK"
+license: MIT
+repository-code: "https://github.com/EJRicketts/diffgrf"
+url: "https://github.com/EJRicketts/diffgrf"
+keywords:
+  - Gaussian random field
+  - spectral method
+  - differentiable programming
+  - PyTorch
+  - autograd
+  - porous media
