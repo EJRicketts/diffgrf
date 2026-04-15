@@ -51,8 +51,10 @@ grf = DifferentiableGRF(
 field = grf.structured([256, 256])
 ```
 
-Observed speedups on Apple M-series over CPU: 4–5× at 128²–256² 2D,
-~10× at 96³ 3D.
+Observed speedups over CPU, best of 3 with `M=1000` modes at
+`float32`: Apple MPS (M4 Pro) ~4–5× at 128²–512² 2D and ~4× at
+24³–64³ 3D; NVIDIA CUDA (Tesla T4) ~50–60× over the Colab CPU
+baseline across the same range.
 
 ## Quickstart
 

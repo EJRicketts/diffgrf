@@ -19,5 +19,4 @@ htmlcov/
 .idea/
 .vscode/
 
-*.ipynb_checkpoints/
-dist/
+.ipynb_checkpoints/
