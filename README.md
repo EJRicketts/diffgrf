@@ -142,19 +142,24 @@ Methods:
 
 ## Citation
 
-If you use DiffGRF in published work, please cite:
+If you use DiffGRF in published work, please cite the SoftwareX paper:
+
+> Ricketts, E.J. (2026). DiffGRF: Differentiable Gaussian random field
+> generation. *SoftwareX*, 34, 102743.
+> https://doi.org/10.1016/j.softx.2026.102743
 
 ```bibtex
-@software{diffgrf,
-  author = {Ricketts, Evan John},
-  title  = {DiffGRF: Differentiable Gaussian random field generation in PyTorch},
-  year   = {2026},
-  url    = {https://github.com/EJRicketts/diffgrf},
+@article{ricketts2026diffgrf,
+  author  = {Ricketts, Evan John},
+  title   = {{DiffGRF}: Differentiable {Gaussian} random field generation},
+  journal = {SoftwareX},
+  volume  = {34},
+  pages   = {102743},
+  year    = {2026},
+  doi     = {10.1016/j.softx.2026.102743},
+  url     = {https://www.sciencedirect.com/science/article/pii/S2352711026002359},
 }
 ```
-
-A peer-reviewed SoftwareX paper describing DiffGRF is in preparation; the
-citation will be updated once published.
 
 ## License
 
